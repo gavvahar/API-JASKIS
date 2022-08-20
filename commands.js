@@ -100,12 +100,7 @@ db.bounties.find({ reward: { $gte: 10000 } });
 
 db.bounties.aggregate({
   $project: {
-    name: 1,
-    species: 1,
-    location: 1,
-    wantedFor: 1,
-    reward: 1,
-    captured: 1,
+    client: 0,
   },
 });
 
